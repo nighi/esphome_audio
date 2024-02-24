@@ -31,7 +31,7 @@ void ADFElementI2SIn::init_adf_elements_() {
       .type = AUDIO_STREAM_READER,
       .i2s_config = i2s_config,
       .i2s_port = this->parent_->get_port(),
-      .use_alc = false,
+      .use_alc = true,
       .volume = 0,
       .out_rb_size = I2S_STREAM_RINGBUFFER_SIZE,
       .task_stack = I2S_STREAM_TASK_STACK,
